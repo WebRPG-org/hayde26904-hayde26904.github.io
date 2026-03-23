@@ -14,19 +14,6 @@
 
 html,
 body {
-
-    .book-copy {
-        justify-self: center;
-    }
-
-    .book-copy p,
-    .book-copy h2,
-    .book-copy h3,
-    .book-copy b {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     margin: 0;
     padding: 0;
 }
@@ -235,17 +222,21 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1.1rem;
+    gap: 0rem;
     min-height: 485px;
 }
 
 .index-page .book-copy .book-short-description {
+    margin-top: 1rem;
     margin-bottom: 0;
+}
+
+.index-page .book-copy .book-review {
+    margin-top: auto;
 }
 
 .index-page .book-copy .read-more-btn {
     align-self: flex-start;
-    margin-top: auto;
     margin-bottom: 5rem;
 }
 
@@ -253,6 +244,7 @@ h2 {
     grid-area: copy;
     width: min(100%, 720px);
     container-type: inline-size;
+    justify-self: center;
 }
 
 .cover-shell::before {
@@ -285,8 +277,10 @@ h2 {
     mask-image: none;
 }
 
-.book-section h2 {
+.book-title {
     margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: clamp(1.2rem, 8.2cqw, 3.4rem);
     max-width: 100%;
     color: #f8f4ea;
@@ -296,6 +290,8 @@ h2 {
 
 .book-subtitle {
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Bebas Neue", Impact, sans-serif;
     font-size: 25px;
     letter-spacing: 0.05em;
@@ -304,13 +300,17 @@ h2 {
 
 .book-section p {
     color: #EEEEEE;
-    margin: 0;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: clamp(1.00rem, 1vw, 1.2rem);
     max-width: 720px;
 }
 
 .book-section b {
-    margin: 0;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: clamp(1.00rem, 1.5vw, 1.2rem);
     max-width: 720px;
 }
@@ -330,7 +330,7 @@ h2 {
     display: flex;
     align-items: flex-start;
     gap: 0.7rem;
-    margin: 0;
+    margin-bottom: 2rem;
     color: var(--ink);
 }
 
@@ -471,8 +471,11 @@ h2 {
         min-height: auto;
     }
 
+    .index-page .book-copy .book-review {
+        margin-top: 0;
+    }
+
     .index-page .book-copy .read-more-btn {
-        margin-top: 0.9rem;
         margin-bottom: 0;
     }
 

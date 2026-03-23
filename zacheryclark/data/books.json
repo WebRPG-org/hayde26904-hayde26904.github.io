@@ -42,8 +42,8 @@
 		"readMoreUrl": "https://www.goodreads.com/book/show/240250632-built-from-her-bones"
 	},
 	{
-		"title": "Patchwork: Chronicles of the Mind",
-		"subtitle": "",
+		"title": "Patchwork",
+		"subtitle": "Chronicles of the Mind",
 		"cover": "assets/covers/patchworkchronicalsofthemind.jpg",
 		"coverAlt": "Patchwork: Chronicles of the Mind book cover",
 		"shortDescription": "Bite-sized stories inspired by random writing prompts and long nights filled with caffeine-fueled boredom. Think of them as mental popcorn: quick, crunchy, and oddly satisfying.",
@@ -62,8 +62,8 @@
 		"readMoreUrl": "https://www.goodreads.com/book/show/217051632-patchwork-chronicles-of-the-mind"
 	},
 	{
-		"title": "Misadventures of Zeke and Liz: The ARG Bureau",
-		"subtitle": "",
+		"title": "Misadventures of Zeke and Liz",
+		"subtitle": "The ARG Bureau",
 		"cover": "assets/covers/misadventuresofzekeandliz.jpg",
 		"coverAlt": "Misadventures of Zeke and Liz book cover",
 		"shortDescription": "Darkly satirical, psychologically gripping, and eerily plausible, a story about how institutions crumble when they mistake fiction for fact, and how obsession can turn surveillance into self-destruction.",

@@ -29,7 +29,7 @@
                             <img src="/<%= book.cover %>" class="book-cover" alt="<%= book.coverAlt %>" />
                         </div>
                         <div class="book-copy">
-                            <h2><%- book.title.replace('The ARG Bureau', '<br>The ARG Bureau') %></h2>
+                            <h2 class="book-title"><%- book.title %></h2>
                             <% if (book.subtitle) { %>
                             <h3 class="book-subtitle"><%= book.subtitle %></h3>
                             <% } %>
