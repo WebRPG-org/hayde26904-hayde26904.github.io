@@ -35,11 +35,14 @@
                                 <b><%= book.shortDescription %></b>
                             </div>
                             <% if (book.reviews && book.reviews.length > 0) { %>
+                            <% const rating = Number(book.reviews[0].scoreOutOf5) || 0; %>
+                            <% const filledStars = Math.max(0, Math.min(5, Math.round(rating))); %>
                             <div class="book-review">
-                                <img class="book-review-photo" src="<%= book.reviews[0].profilePhotoUrl %>" alt="<%= book.reviews[0].name %> profile photo" />
                                 <div class="book-review-copy">
-                                    <p class="book-review-meta"><strong><%= book.reviews[0].name %></strong> • <%= book.reviews[0].scoreOutOf5 %>/5</p>
-                                    <p class="book-review-text">“<%= book.reviews[0].reviewText %>”</p>
+                                    <p class="book-review-meta"><strong><%= book.reviews[0].publicationName %></strong> • <%= rating.toFixed(1) %>/5</p>
+                                    <p class="book-rating-stars" aria-label="Rated <%= rating.toFixed(1) %> out of 5 on <%= book.reviews[0].publicationName %>">
+                                        <span class="book-rating-stars-filled"><%= '★'.repeat(filledStars) %></span><span class="book-rating-stars-empty"><%= '★'.repeat(5 - filledStars) %></span>
+                                    </p>
                                 </div>
                             </div>
                             <% } %>
